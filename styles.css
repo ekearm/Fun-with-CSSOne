@@ -1,0 +1,53 @@
+body {
+  background-color: pink;
+}
+.parent {
+  width: 45em;
+	height: 40em;
+  background-color: aqua;
+  color: whitesmoke;
+  border: 6px solid salmon;
+  border-radius: 10px;
+  transform: translateX(50%);
+	
+	/* display: grid;
+	grid-template: repeat(3, 1fr) / repeat(3, 1fr); */
+}
+
+.child {
+  width: inherit * .1111;
+  height: inherit * .1111;
+  border-radius: 10%;
+  border: 5px solid purple;
+
+  display: grid;
+	grid-template: repeat(3, 1fr) / repeat(3, 1fr);
+}
+
+.grandChildOne, .grandChildTwo, .grandChildThree, .grandChildFour, .grandChildFive, .grandChildSix, .grandChildSeven, .grandChildEight, .grandChildNine {
+  width: inherit * .1111;
+  height: inherit * .1111;
+
+  background-color: chocolate;
+  border: 5px solid blue;
+  
+  display: grid;
+	grid-template: repeat(3, 1fr) / repeat(3, 1fr);
+}
+
+#one, #two, #three, #four, #five, #six, #seven, #eight, #nine {
+  background-color: black;
+  border: 2.5px solid white;
+  border-radius: 25%;
+
+  display: grid;
+	grid-template: repeat(3, 1fr) / repeat(3, 1fr);
+}
+.one, .two, .three, .four, .five, .six, .seven, .eight, .nine{
+
+  font-size: 13px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1.25px solid pink;
+}
